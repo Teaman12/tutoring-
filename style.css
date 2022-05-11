@@ -17,7 +17,13 @@ nav {
 	justify-content: space-between;
 	font-size: medium;
 }
-
+.nav_log {
+	box-sizing:border-box;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
 nav .mainMenu {
 	display: flex;
 	list-style: none;
@@ -92,7 +98,7 @@ nav .logo {
 
 	nav .mainMenu li a:hover {
 		background: none;
-		color: orange;
+		color: aqua;
 		font-size: 1.6rem;
 	}
 
@@ -137,22 +143,32 @@ nav .logo {
 		flex-direction: column-reverse;
 		justify-content:space-between;
 	}
-	.column {
-		flex-wrap: wrap;
+	.middle_content {
+		flex: wrap;
 		flex-direction: column;
 		justify-content:space-between;
 	} 
+	.slider {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		background-image: url(family1.jpg) 10px;
+		animation:20s slider infinite;
+	
+	}
+	.topheader {
+		background-image: url("curly.jpg");
+		background-attachment: fixed;
+		background-size:cover;
+		background-repeat: no-repeat;
+		box-sizing:border-box;
+		width: 100%;
+		height: auto;
+		
+	}
 }
 
-.headersign {
-	height: 150px;
-	background-image: url("curly.jpg");
-	background-size: cover;
-	background-position: 50px;
-	background-repeat:no-repeat;
-	margin-top: -20px;
-	
-}
+
 
 .slider {
 	width: 612px;
@@ -228,7 +244,7 @@ nav .logo {
 
 .nav-list li a:hover{
 	color: aqua;
-	background-color:blueviolet;
+	background-color:rgb(138, 43, 226);
 	border-radius: 4px;
 	margin: 10px;
 	padding: 2px;
@@ -353,7 +369,7 @@ ul {
 	
 }
 .footer-col ul li {
-	color: blueviolet;
+	color: rgb(138, 43, 226);
 }
 
 .footer-col h4{
@@ -371,7 +387,7 @@ ul {
 	line-height: 40px;
 	border-radius: 50%;
 	box-sizing: content-box;
-	color: blueviolet;
+	color: rgb(138, 43, 226);
 	
 }
 .social-links a:hover {
