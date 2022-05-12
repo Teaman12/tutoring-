@@ -1,5 +1,4 @@
 	
-
 .topheader {
 	background-image: url("curly.jpg");
 	background-attachment: fixed;
@@ -84,6 +83,7 @@ nav .logo {
 		background-color: none;
 		transition: top 1s ease;
 		display: none;
+		
 	}
 
 	nav .mainMenu .closeMenu {
@@ -150,15 +150,12 @@ nav .logo {
 		flex-direction: column;
 		justify-content:space-between;
 	} 
+	/*images*/
 	.slider {
-		width: 100%;
-		height: auto;
 		object-fit: cover;
 		background-image: url(family1.jpg) 10px;
 		animation:20s slider infinite;
 		max-width: 100%;
-  		height: auto;
-		max-height: 408px;
 	
 	}
 	.topheader {
@@ -181,7 +178,12 @@ nav .logo {
 		height: auto;
 		
 	}
-	
+	img {
+		max-width: 100%;
+	}
+	.slider img {
+		max-width: 100%;
+	}
 }
 
 
@@ -190,6 +192,9 @@ nav .logo {
 	height: 408px;
 	object-fit: cover;
 	background-image: url(family1.jpg) 10px;
+	background-image: no-repeat;
+	background-attachment:scroll;
+	background-size:contain;
 	animation:20s slider infinite;
 	
 
@@ -209,7 +214,7 @@ nav .logo {
 	background-color:none;
 	width: 590px;
 	padding-left: 10px;
-	font-family: 'Tapestry', 'cursive';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
 	padding-bottom: 20px;
 	padding-bottom: 20px;
