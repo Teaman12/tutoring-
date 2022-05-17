@@ -61,7 +61,7 @@ nav .mainMenu .closeMenu , .icons i {
 
 .fa-facebook:hover {color: blue;}
 .fa-instagram:hover {color:blueviolet;}
-.fa-twitter:hover {color: blue;}
+.fa-twitter:hover {color: none;}
 
 nav .logo {
 	margin:6px;
@@ -135,6 +135,7 @@ nav .logo {
 		flex-direction: column;
 		flex: wrap;
 		flex-direction: column;
+		border-radius: 10px;
 	}	
 	.column {
 		flex: wrap;
@@ -144,20 +145,25 @@ nav .logo {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		justify-content:space-between;
+		
 	}
 	.middle_content {
 		flex: wrap;
 		flex-direction: column;
 		justify-content:space-between;
+		border-radius: 10px;
 	} 
 	/*images*/
 	.slider {
+		
 		object-fit: cover;
 		background-image: url(family1.jpg) 10px;
+		background-image: no-repeat;
+		background-attachment:fixed;
+		background-size:auto;
 		animation:20s slider infinite;
-		max-width: 100%;
-	
 	}
+
 	.topheader {
 		background-image: url("curly.jpg");
 		background-attachment: fixed;
@@ -181,21 +187,40 @@ nav .logo {
 	img {
 		max-width: 100%;
 	}
+	.box {
+		margin-left: 10px;
+		background-color:none;
+		width: 590px;
+		padding-left: 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 40px;
+		padding-bottom: 20px; 
 
+	}
+	.paragraphs {
+		background-color: rgb(248, 242, 231);
+	}
+	.contain {
+		background-color: rgb(248, 242, 231);
+	}
+	.aim {
+		background-color: black;
+		color: white;
+	}
+	
 }
-
 
 .slider {
 	width: 612px;
 	height: 408px;
-	object-fit: cover;
+	object-fit: cover; 
 	background-image: url(family1.jpg) 10px;
 	background-image: no-repeat;
 	background-attachment:scroll;
-	background-size:contain;
+	background-size:auto;
 	animation:20s slider infinite;
+	max-width: 100%;
 	
-
 }
 
 .container {
@@ -203,20 +228,19 @@ nav .logo {
 	flex-direction:row;
 	-ms-flex-align: end;
 	justify-content:space-around;
-	background-color:floralwhite;
+	background-color:rgb(248, 242, 231);
 	
 }
 
 .box {
-	margin-left: -10px;
+	margin-left: 10px;
 	background-color:none;
 	width: 590px;
 	padding-left: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
-	padding-bottom: 20px;
-	padding-bottom: 20px;
-
+	padding-top: -40px;
+	
 }
 
 @keyframes  slider {
@@ -235,7 +259,6 @@ nav .logo {
 	100% {
 	background-image: url(family1.jpg);
 		}
-		
 	}
 
 .nav-list {
