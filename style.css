@@ -224,10 +224,7 @@ h5 {
 	justify-content:space-around;
 	
 }
-img step {
-	height: 10px;
-	width: 100%;
-}
+
 .bottom {
 	align-items: left;
 	margin-left: 0%;
@@ -363,8 +360,9 @@ form input {
 	background-image: url(enter6.jpg);
 	background-size: cover;
 	margin-top: -20px;
+	margin: 0%;
+	padding: 0%;
 }
-
 .topheading {
 	text-align: center;
 }
@@ -440,9 +438,7 @@ input[value ="Home"]{
 		left: 0px;
 		background-color: black;
 	}
-	.heads1 {
-		text-align: center;
-	}
+
 	.container {
 		display: block;
 	}
@@ -487,6 +483,33 @@ input[value ="Home"]{
 		flex-direction: column;
 		justify-content:space-between;
 		
+	}
+	form {
+		width: 240px;
+		margin-left: 20px;
+	}
+	input[type="button"]{
+		width: 178px;
+		height: 35px;
+		margin-left: 80px;
+		margin-top: 20px;
+		border: none;
+		background-color:black;
+		color: white;
+		font-size: 15px;
+	}
+	.topheading {
+		text-align: center;
+		margin-right: 60px;
+	}
+	form input {
+		width: 100%;
+		padding: 6.5px;
+		border: none;
+		border: 1px solid gray;
+		border-radius: 6px;
+		margin: 5px;
+		text-align: center;
 	}
 	.middle_content {
 		flex: wrap;
