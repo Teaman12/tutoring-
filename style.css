@@ -64,9 +64,9 @@ nav .mainMenu .closeMenu , .icons i {
 	cursor: pointer;
 }
 
-.fa-facebook:hover {color: blue;}
+.fa-facebook:hover {color: deepskyblue;}
 .fa-instagram:hover {color:rgb(139, 42, 229);}
-.fa-twitter:hover {color: none;}
+.fa-twitter:hover {color: deepskyblue;}
 
 nav .logo {
 	margin:6px;
@@ -358,6 +358,7 @@ form input {
 .signing {
 	background-color: none;	
 	background-image: url(enter6.jpg);
+	background-attachment: fixed;
 	background-size: cover;
 	margin-top: -20px;
 	margin: 0%;
@@ -422,7 +423,12 @@ input[value ="Home"]{
 		display: block;
 	
 	}
-	nav .mainMenu .closeMenu , .icons i {
+	nav .mainMenu .closeMenu {
+		font-size: 2rem;
+		display:block;
+		cursor: pointer;
+	}
+	.icons i {
 		font-size: 2rem;
 		display:none;
 		cursor: pointer;
