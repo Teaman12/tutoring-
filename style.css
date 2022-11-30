@@ -63,7 +63,9 @@ nav .mainMenu .closeMenu , .icons i {
 	display: none;
 	cursor: pointer;
 }
-
+.head_text {
+	text-align: center;
+}
 .fa-facebook:hover {color: deepskyblue;}
 .fa-instagram:hover {color:rgb(139, 42, 229);}
 .fa-twitter:hover {color: deepskyblue;}
@@ -275,7 +277,7 @@ ul {
 	
 }
 .footer-col ul li {
-	color: rgb(138, 43, 226);
+	color: rgb(138, 43, 227);
 }
 
 .social-links a {
