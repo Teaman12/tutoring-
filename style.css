@@ -481,6 +481,13 @@ input[value ="Home"]{
 		justify-content: space-between;
 		
 	}	
+	.contain {
+		display: flex;
+		flex-direction:column;
+		-ms-flex-align: end;
+		justify-content:space-between;
+		color: white;	
+	}
 	.column {
 		flex: wrap;
 		flex-direction: column;
