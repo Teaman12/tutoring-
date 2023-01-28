@@ -175,12 +175,6 @@ nav .logo {
 	height: 21px;
 	
 }
-.toggle-button .bar{
-	height: 3px;
-	width: 100%;
-	background-color:black;
-	border-radius: 10px;
-}
 
 .col1 {	
 	display: flex;
@@ -476,15 +470,15 @@ input[value ="Home"]{
 	.aim {
 		background-color: rgb(253, 166, 4);
 		color: white;
-		border-radius: 10px;
+
 		
 	}
 	.middle_content {
 		position: relative;
-		flex-direction: column;
 		flex: wrap;
 		flex-direction: column;
-		border-radius: 10px;
+		justify-content: space-between;
+		
 	}	
 	.column {
 		flex: wrap;
@@ -528,7 +522,7 @@ input[value ="Home"]{
 		flex: wrap;
 		flex-direction: column;
 		justify-content:space-between;
-		border-radius: 10px;
+
 	} 
 	.col {/*footer*/
 		position: relative;
