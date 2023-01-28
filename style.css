@@ -247,11 +247,11 @@ ul {
 }
 
 .footer {
-	background-color:rgb(209, 226, 241);
+	background-color:rgb(7, 41, 70);
 	padding: 70px 0;
 }
 .footermin {
-	background-color:rgb(209, 226, 241);
+	background-color: rgb(7, 41, 70);
 	padding: 10px 0;
 }
 .bottompage {
@@ -272,12 +272,17 @@ ul {
 	
 }
 
+.footer-col ul li a:visited{
+	color: rgb(139, 42, 229);
+}
+
+.footer-col ul li {
+	color:aqua;
+}
+
 .footer-col ul li a:hover{
 	color: white;
 	
-}
-.footer-col ul li {
-	color: rgb(138, 43, 227);
 }
 
 .social-links a {
@@ -562,10 +567,10 @@ input[value ="Home"]{
 		max-width: 100%;
 	}
 	.message {
-		background-color: rgb(248, 242, 231);
+		background-color: rgb(7, 41, 70);
 	}
 	.contain {
-		background-color: rgb(248, 242, 231);
+		background-color: rgb(7, 41, 70);
 	}
 	
 	.bottom {
