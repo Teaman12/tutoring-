@@ -224,7 +224,7 @@ h5 {
 	flex-direction:row-reverse;
 	-ms-flex-align: end;
 	justify-content:space-around;
-	
+	color: white;	
 }
 
 .bottom {
@@ -568,6 +568,7 @@ input[value ="Home"]{
 	}
 	.message {
 		background-color: rgb(7, 41, 70);
+		color: white;
 	}
 	.contain {
 		background-color: rgb(7, 41, 70);
