@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 	box-sizing:border-box;
 	max-width: 100%;
-  	height: 300px;
+  	height: 400px;
 	
 }
   
@@ -19,15 +19,22 @@ nav {
 	font-size: medium;
 }
 .nav_log {
-	box-sizing:border-box;
-	background-color: gainsboro;
-	color: white;
+
+	background-color: black;
 	display: flex;
 	justify-content: space-between;
 }
 nav .mainMenu {
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 	list-style: none;
+	background-color: black;
+	background-position: inherit;
+	padding-right: 650px;
+	padding-left: 10px;
+	margin-top: -0.5px;
+	
 }
 
 nav .mainMenu li a {
@@ -35,14 +42,14 @@ nav .mainMenu li a {
 	padding: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.5rem;
-	color:rgb(139, 42, 229);
+	font-size: 1.2rem;
+	color: white;
 	font-size: medium;
 	font-weight:bolder;
 }
 
 nav .mainMenu li a:hover {
-	background-color: rgb(4, 253, 253);
+	background-color:chartreuse;
 	border-radius: 10px;
 	height: 15px;
 }
@@ -51,6 +58,7 @@ nav .openMenu {
 	margin: 20px;
 	display: none;
 	cursor: pointer;
+
 }
 nav .closeMenu {
 	font-size: 2rem;
@@ -65,6 +73,7 @@ nav .mainMenu .closeMenu , .icons i {
 }
 .head_text {
 	text-align: center;
+	margin-bottom: 180px;
 }
 .fa-facebook:hover {color: deepskyblue;}
 .fa-instagram:hover {color:rgb(139, 42, 229);}
@@ -358,18 +367,22 @@ form input {
 }
 
 .signing {
-	background-color: none;	
-	background-image: url(enter6.jpg);
+	background-color: rgb(7,41,70);	
 	background-attachment: fixed;
 	background-size: cover;
+	color: whitesmoke;
 	margin-top: -20px;
 	margin: 0%;
 	padding: 0%;
 }
 .topheading {
 	text-align: center;
+	
 }
-
+#sub_button {
+	color: whitesmoke;
+	font-size: 15px;
+}
 input[type="button"]{
 	width: 314px;
 	height: 35px;
