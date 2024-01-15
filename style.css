@@ -5,8 +5,8 @@
 	background-size:cover;
 	background-repeat: no-repeat;
 	box-sizing:border-box;
-	max-width: 100%;
   	height: 400px;
+	overflow: hidden;
 	
 }
   
@@ -18,33 +18,57 @@ nav {
 	justify-content: space-between;
 	font-size: medium;
 }
-.nav_log {
 
-	background-color: black;
-	display: flex;
-	justify-content: space-between;
-}
 nav .mainMenu {
 	display: flex;
+	flex: 0 0 auto; 
 	flex-direction: row;
-	justify-content: flex-end;
+	align-items: flex-start;
 	list-style: none;
-	background-color: black;
 	background-position: inherit;
-	padding-right: 650px;
-	padding-left: 10px;
-	margin-top: -0.5px;
+	margin-top: -0.5px;	
 	
 }
 
+/*(not applied in code) nav .mainMenu li:nth-child(1) {
+	margin-right: auto;
+}*/
+.nav_log {
+	display: flex;
+	justify-content: flex-end;
+	flex: 0 auto; 
+
+}
+.logo {
+	position: relative;
+	padding-top: 20px;
+	padding-right: 370px;
+	height: 300px;
+	width: 300px;
+	top: -97px;
+	left: 0px;
+	display: block;
+}
+.logo_log {
+	position: relative;
+	padding-right: 490px;
+	margin-bottom: 60px;
+	height: 250px;
+	width: 250px;
+	top: -10px;
+	left: 0px;
+	display: block;
+
+}
 nav .mainMenu li a {
-	display: inline-block;
+	display: flex;
+	flex: 0 0 auto; 
 	padding: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.2rem;
-	color: white;
-	font-size: medium;
+	color: black;
+	font-size:large;
 	font-weight:bolder;
 }
 
@@ -62,18 +86,23 @@ nav .openMenu {
 }
 nav .closeMenu {
 	font-size: 2rem;
-	margin: 20px;
 	display: none;
 	cursor: pointer;
 }
-nav .mainMenu .closeMenu , .icons i {
+.icons {
+	display: none;
+}
+nav .mainMenu .closeMenu .icons i {
 	font-size: 2rem;
 	display: none;
 	cursor: pointer;
 }
 .head_text {
+	position: relative;
 	text-align: center;
-	margin-bottom: 180px;
+	margin-top: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: lighter;
 }
 .fa-facebook:hover {color: deepskyblue;}
 .fa-instagram:hover {color:rgb(139, 42, 229);}
@@ -170,9 +199,6 @@ nav .logo {
 	-ms-text-kashida-space: 2px;
 }
 
-.nav-list li:nth-child(1) {
-	margin-right: auto;
-}
 .toggle-button {
 	position: absolute;
 	top: .75rem;
@@ -345,6 +371,8 @@ h4 {
 	margin: auto;
 	list-style-position: left;
 	list-style: none;
+	margin-top: -325px;
+	padding-top: 200px;
 
 }
 
@@ -371,9 +399,7 @@ form input {
 	background-attachment: fixed;
 	background-size: cover;
 	color: whitesmoke;
-	margin-top: -20px;
-	margin: 0%;
-	padding: 0%;
+
 }
 .topheading {
 	text-align: center;
@@ -408,7 +434,9 @@ input[value ="Home"]{
 	font-family: 'Open Sans', sans-serif;
 	
 }
-
+.home_btn button a:hover {
+	background-color:chartreuse;
+}
 @media (max-width: 768px) {
 
 	nav .mainMenu{
@@ -421,40 +449,47 @@ input[value ="Home"]{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: none;
+		background-color: rgb(7,41,70);
 		transition: top 1s ease;
 		display: none;
 		
 	}
 
-	nav .mainMenu .closeMenu {
-		display: block;
-		position: absolute;
-		top: 40px;
-		right: 40px;
+	nav .closeMenu {
+		display: none;
+		position: relative;
+		right: 344px;
+		top: 20px;
 	}
-
 	nav .openMenu {
-		display: block;
-	
+		display: inline;
+		position: relative;
+		right: 300px;
 	}
 	nav .mainMenu .closeMenu {
 		font-size: 2rem;
-		display:block;
+		display:inline;
 		cursor: pointer;
 	}
 	.icons i {
 		font-size: 2rem;
-		display:none;
+		display: block;
+		padding: 12px;
 		cursor: pointer;
+		background-color: none;
 	}
+	.fa-facebook:hover {color: deepskyblue;}
+	.fa-instagram:hover {color:rgb(139, 42, 229);}
+	.fa-twitter:hover {color: deepskyblue;}
 
 	nav .mainMenu li a:hover {
 		background: none;
 		color: rgb(4, 253, 253);
-		font-size: 1.6rem;
+		
 	}
 	.mainMenu {
+		display: flex;
+		flex-direction: column;
 		position:fixed;
 		left: 0px;
 		background-color: black;
@@ -586,10 +621,6 @@ input[value ="Home"]{
 	.bottom {
 		margin: 0%;
 		padding: 0%;
-	}
-	.icons i {
-		display: inline-block;
-		padding: 12px;
 	}
 	
 }
